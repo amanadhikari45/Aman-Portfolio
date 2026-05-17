@@ -1,0 +1,10 @@
+.scrollBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  z-index: 1000;
+  background: linear-gradient(135deg, #4f9cff 0%, #a78bfa 50%, #2dd4bf 100%);
+  transition: width 0.08s linear;
+  pointer-events: none;
+}

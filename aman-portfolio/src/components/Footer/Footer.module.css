@@ -1,0 +1,60 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  background: #0d0e1c;
+  border-top: 1px solid rgba(120, 180, 255, 0.12);
+  padding: 40px 60px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #4f9cff 0%, #a78bfa 50%, #2dd4bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.copy {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: #7888aa;
+  letter-spacing: 0.04em;
+}
+
+.grad {
+  background: linear-gradient(135deg, #4f9cff, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.icon {
+  color: #7888aa;
+  font-size: 1.1rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.icon:hover {
+  color: #4f9cff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .footer { padding: 32px 24px; }
+  .inner { flex-direction: column; text-align: center; }
+}

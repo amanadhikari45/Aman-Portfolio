@@ -1,0 +1,54 @@
+/* ============================================================
+   DESIGN TOKENS — Aman Adhikari Portfolio
+   ============================================================ */
+
+:root {
+  /* Background layers */
+  --bg: #07080f;
+  --surface: #0d0e1c;
+  --card: #12132a;
+  --card2: #0f1020;
+
+  /* Borders */
+  --border: rgba(120, 180, 255, 0.12);
+  --border2: rgba(120, 180, 255, 0.22);
+
+  /* Accent palette */
+  --blue: #4f9cff;
+  --violet: #a78bfa;
+  --teal: #2dd4bf;
+  --gold: #fbbf24;
+  --rose: #fb7185;
+
+  /* Text */
+  --text: #eef0fa;
+  --muted: #7888aa;
+
+  /* Gradients */
+  --grad: linear-gradient(135deg, #4f9cff 0%, #a78bfa 50%, #2dd4bf 100%);
+  --grad2: linear-gradient(135deg, #a78bfa 0%, #4f9cff 100%);
+
+  /* Glows */
+  --glow-blue: rgba(79, 156, 255, 0.15);
+  --glow-violet: rgba(167, 139, 250, 0.12);
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing scale */
+  --section-padding: 96px 60px;
+  --nav-height: 68px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* ── Responsive spacing ── */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 64px 24px;
+  }
+}

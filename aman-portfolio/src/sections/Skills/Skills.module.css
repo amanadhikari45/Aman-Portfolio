@@ -1,0 +1,65 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.category {}
+
+.catLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.67rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #a78bfa;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.catLabel i { font-size: 0.88rem; }
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  padding: 9px 15px;
+  background: #12132a;
+  border: 1px solid rgba(120,180,255,0.12);
+  color: #eef0fa;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.pill i {
+  font-size: 0.85rem;
+}
+
+.pill:hover {
+  border-color: #4f9cff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(79,156,255,0.1);
+}
+
+/* Brand icon colors */
+.pill :global(.fa-python)   { color: #4b8bbe; }
+.pill :global(.fa-java)     { color: #e76f00; }
+.pill :global(.fa-js)       { color: #f0db4f; }
+.pill :global(.fa-react)    { color: #61dafb; }
+.pill :global(.fa-docker)   { color: #0db7ed; }
+.pill :global(.fa-git-alt)  { color: #f34f29; }
+.pill :global(.fa-aws)      { color: #ff9900; }
+.pill :global(.fa-linux)    { color: #fcc624; }
+.pill :global(.fa-node-js)  { color: #68a063; }
+.pill :global(.fa-html5)    { color: #e34c26; }
+.pill :global(.fa-css3-alt) { color: #264de4; }

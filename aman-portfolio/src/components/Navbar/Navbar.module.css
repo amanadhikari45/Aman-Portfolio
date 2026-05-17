@@ -1,0 +1,109 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  height: 68px;
+  background: rgba(7, 8, 15, 0.82);
+  backdrop-filter: blur(28px);
+  border-bottom: 1px solid rgba(120, 180, 255, 0.12);
+  transition: border-color 0.3s;
+}
+
+.nav.scrolled {
+  border-bottom-color: rgba(120, 180, 255, 0.22);
+}
+
+.logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: linear-gradient(135deg, #4f9cff 0%, #a78bfa 50%, #2dd4bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.02em;
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: #7888aa;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #4f9cff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s;
+}
+
+.link:hover { color: #eef0fa; }
+.link:hover::after { transform: scaleX(1); }
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.available {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #2dd4bf;
+  border: 1px solid rgba(45, 212, 191, 0.2);
+  padding: 6px 12px;
+}
+
+.hireBtn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  padding: 9px 20px;
+  background: linear-gradient(135deg, #4f9cff 0%, #a78bfa 50%, #2dd4bf 100%);
+  color: #07080f;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+}
+
+.hireBtn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .nav { padding: 0 24px; }
+  .links { display: none; }
+}

@@ -1,0 +1,102 @@
+.section {
+  background: #0d0e1c;
+  border-top: 1px solid rgba(120,180,255,0.12);
+  border-bottom: 1px solid rgba(120,180,255,0.12);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.text p {
+  font-size: 0.97rem;
+  color: #7888aa;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+.text p strong { color: #eef0fa; font-weight: 600; }
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #12132a;
+  border: 1px solid rgba(120,180,255,0.12);
+  padding: 13px 16px;
+  transition: border-color 0.2s;
+}
+
+.infoRow:hover { border-color: rgba(79,156,255,0.3); }
+
+.infoRow i {
+  font-size: 0.95rem;
+  color: #4f9cff;
+  width: 18px;
+  flex-shrink: 0;
+}
+
+.infoRow h5 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #eef0fa;
+  margin-bottom: 2px;
+}
+
+.infoRow p {
+  font-size: 0.78rem;
+  color: #7888aa;
+}
+
+.right { position: relative; }
+
+.photo {
+  width: 100%;
+  border: 1px solid rgba(120,180,255,0.12);
+  object-fit: cover;
+  object-position: top center;
+  height: 400px;
+}
+
+.goalCard {
+  margin-top: 12px;
+  background: linear-gradient(135deg, rgba(167,139,250,0.06) 0%, rgba(79,156,255,0.04) 100%);
+  border: 1px solid rgba(167,139,250,0.2);
+  padding: 18px;
+}
+
+.goalCard h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a78bfa;
+  margin-bottom: 10px;
+}
+
+.goalCard p {
+  font-size: 0.82rem;
+  color: #7888aa;
+  line-height: 1.7;
+}
+
+.goalCard p strong { color: #eef0fa; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .right { display: none; }
+}
